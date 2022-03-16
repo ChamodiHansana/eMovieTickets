@@ -21,11 +21,6 @@ namespace eMovieTickets.Data.Services
            await _context.SaveChangesAsync();
         }
 
-        public void Delete(int id)
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task<IEnumerable<Actor>> GetAll()
         {
             var result =await _context.Actors.ToListAsync();
